@@ -6,10 +6,12 @@ import About from './pages/About';
 import Search from './pages/Search';
 import CreateListing from './pages/CreateListing';
 import Profile from './pages/Profile';
+import Header from './components/Header';
 
 export default function App (){
   return (
      <BrowserRouter>
+     <Header/>
     <Routes>
         <Route path='/' element ={<Home />} />
         <Route path='/signIn' element={<SignIn/>} />
